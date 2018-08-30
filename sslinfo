@@ -55,7 +55,7 @@ done
 if [ -z "$host" ]; then
 	echo "Error: host argument must be provided" >&2
 	exit 1
-elif ! [[ "$host" =~ ^([a-zA-Z0-9]+\.)+[a-zA-Z0-9]+$ ]]; then
+elif ! [[ "$host" =~ ^([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]+$ ]]; then
 	echo "Error: Invalid host \"$host\"" >&2
 	exit 1
 fi
